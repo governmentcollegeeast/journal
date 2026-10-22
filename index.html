@@ -1616,8 +1616,252 @@ details[open] summary span { transform:rotate(45deg); }
 
 <section class="final">
   <div class="script">The last page...</div>
-  <p>These 101 pages have an ending date.<br>Our story doesn't. ❤️</p>
+  <p>These 142 pages have more to go</p>
 </section>
+<script>
+const additionalEntries = [
+  {
+    n: 102,
+    date: "22 June",
+    text: `Tuc just hune bolke hate o ki pareshaan hojuge tuc ye vo sab. Mein na dilo bolna chahnda c ki Mein rabb toh mangdaa yr thnu, 1 vi din chde bina rojj thnu mangdaa roj.. edha mangke pareshaan ho jnaa possible hini ji. Ehh din vste mein kini mannataa kinii duaavaa kinee pooja path apna lee kdi gurudware kdi tuesday hanuman jii kdi shivji ki ni chdyaa mein ta masjid tk chla jnda😂😂. Kdi bajrang baan sun reha thnu mang rehaa kdi alakh niranjan thnu mang reha kdi chaupai sahib td vi thnu mang reha. Eh sb hune kyo ni boleya? Taaki tuc burden na feel krooo❤️. Let go everything smoothly❤️. I love you❤️🧿`
+  },
+  {
+    n: 103,
+    date: "23 June",
+    text: `Pyar de raah tureya rasta ni c dikh reha, Raah navva c ta anjaan bnn si tur reha, Manzil saaf c prr raah mere vste itt pathar toh pani le aya, Gilaa rabb toh aa kii insaan mange te oh meinu de na paya, Aaj dil te pathar rkh khud nu vichad reha, Tuhadi khushi vste apna sab toh keemti insaan vichad reha Ikk tarfa pyar aaj smjh chuka a, Thnu khud toh dur hunda dekh khud mukk chuka a Rabb toh thnu mang tuhadi khushi di jimmewari chuki c, Tuhanu khush rkhn di najaane kini mannata rkhiya c, Meinu ni pta aaj ki hau apne ch, Pr thnu ni bhula pau, Meri akhri yaad bann mere nal rahu Jimmewari toh duaa da safar meinu chahe kande dayi javve, Pr tuhade aanch vi na aave ehh dua meri puri ho javve Eh pyar hun mukk ni skda, Mera teri khushi mangna rukk ni skda Duniya kr chuki daga hau, Rabb toh dua kru ki aan vala kal tenu Ca de padhar te jaga dau Khwaab tere di dua hmesha kru, Mada ni c chaya eh gl da maan hmesha rahuu, Bahadur bann khud nu bda kuch smjhaleya, Aaj mein ehi smjhlu mein apna dilo kita pyar apne hatho gvaleya💔`
+  },
+  {
+    n: 104,
+    date: "24 June",
+    text: `Kal da din bhot bhot aukha c yrr khud nu bhot valueless bhot hi bekar insaan ptani ki ki smjhya yrr khud nu ehna koseya roya vi ptani ki ki yrr gurudware jake mang reha ptani ki ki yrr no words to explain bss decision aa naa haar manni naa eh pyaar toh move on hona thik hai demotivated aa bhot prr ki krr skde aa, i lovee youu`
+  },
+  {
+    n: 105,
+    date: "25 June",
+    text: `Meinu ptaa tuhade trust issues aa bhot kuch aa i don't think you love me or not but mein eh chahna ki thnu pta hove ki you have or you had someone who loved you sooo soo much without any intention but everything was just mishti❤️. I love you soo much yaar 🥹❤️. Meinn sabb varan da dum rkhuu meri life M toh shuru hoke I te khtm hoyegii ik navvi life shuru krna chahnaa hadd toh vdh pyar krna chahna thnuu ik edha di life dikhana chahnaa ki bss thnu edha lgee ki eh ik series chal rhi hai but o series never ending hove. I just love you soo deeply yr🥹 ❤️`
+  },
+  {
+    n: 106,
+    date: "26 June",
+    text: `Meinu hor roj kuch nvva view dikhda yrr jdd kdi koi chaj di gl ho javvee mere view point toh ta sbb vdia ho jnda vrna mein overthink krda. But ik gl tuc vi socho na ki if i overthink that means i love you? Obviously bnda kyoo kuch sochega je pyar hini hoyega yr dsoo?? Mein kdi kdi bhot ignored feel krdaa prr tuhade kehn te mann vi janaa annee vang bhrosa krda mere vstee kuch matter hini krda if i have you. I dont know ki future hoyega but yr mein ohna cho aa jehda tuhada mada ta bilkul ni chahnda tuhade up down ch nal khdna chahna tuhade vste hi sbb krna chahna. Thnuu ik vdia life dena chahna. Jine thnu chdya ki o nai jnda c tuc CA banna? Prr mein janda tuc ki krna mein tuhade toh better hi sochke betha yr sbb mere vste kuchni aa bss tuc hoo. Shyd kisi ne thnu glt paan vste koivi hadd chuni hovee pr mein tuhadi khushiya nu ehna mainee rkhdaa kii tuhade naam da tyohar bnaa dvaa tuhade birthday te thnu jroorat thnu smjha dvaa te tuhadi taraki tee pura asmaan chmkaa dva❤️`
+  },
+  {
+    n: 107,
+    date: "27 June",
+    text: `Yrr iss toh best scenario for a relationship ho hini skda yrr sade dona di vibe ehni mildi apa Ik dooje nu smjhde a Kathe hsde a Vdia bond Kathe dreams bna skde a Ik dooje de ghr ch vass skde aa Manglik tk aa yrr Hor ki chahida Viah de supne dekhda yr mein te tuhade nall Mein ta propose vi ehi kehke kru viahh krayegi mere nall?`
+  },
+  {
+    n: 108,
+    date: "28 June",
+    text: `Mein je chla gya meinu pta koi frk ni payega pr eh hai mein edha ni jauga apna pura zor lgake jauga pr je na meri kismat ch tuhada naam hoya ta mein thnu jaan dauga. Khud aage vdhn vste nii thnu aage vdhaan vste mein aage ni vdhna chahuga hor kisi nu eh pyar krr vini paugaa prr thnu jaan dauga. Khud pahada vang shant rahuga thnuu havava vang pura ambarr ghumn dauga thnu kdi tang ni krugaa. Bss yaad rkhlena ik c jehda pagala vang chahnda c meinu. Apne supne mere naam toh bunnda c te mere naam te khtm kr dinda c. apne aap nu bhul pehli vrr kisi nu pyar krda c. khud nu pura badalke mere vste khud nu kurbaan krda c. je ik var chla gya pukaaran te vi vapas ni aau. Prr apne vaade nibhan lai hmesha khdd jau`
+  },
+  {
+    n: 109,
+    date: "29 June",
+    text: `Aaj apni gl kaafi neutral rahi yrr but i love youu soo much yes you were suffering from periods i was making soo much efforts to make you laugh atleast but was unable to do it today fir mein end ch flirt hi krleya kyoki jithe jnaab gll tuhadii hovee othee meinn chup rehh laa edha ho skdaa laadlii dispossible. Yes i love you, i love each moment with you, your no to flirt is also the point where i fall for you again and again`
+  },
+  {
+    n: 110,
+    date: "30 June",
+    text: `Bhot cheeja cho nikl rehaa sb toh vadda mumma da operate prr thnu pta mera thnu mangna constant reha mein kdi vii thnu mngna ni chdya meri jroorat ch mumma di sehat de nal tuhadi mang vi c. bhot pyar krda yr hun mein izhaar krna bnd krta hai kyoki tuc burden lende si uss nu but seriously mera pyar ni ght skda. Jina shyd mein krdaa koi kr ni pauu thnu ha mein ik vdia propose krke tuhade toh haa yaa naa laina chahna prr uss toh vi jroori mein pehle thnu apna bnana chahna. Mera pyar shyd kdi tuc pehchaan na paoo prr ik gl aa yr mein ni chahnda kdi tuc mere toh dur hovo. Pr mein thnu as life partner dekhna chahnda kyoki iss toh best scenario and pyar meinu life ch kdi ni mil skda`
+  },
+  {
+    n: 111,
+    date: "01 July",
+    text: `Pta mein aaj roya c kyokii apa mil ni paye mein milke ik gl krna chahnda si te oo gl krn piche mein khud nal ptani kinni galla maariya c te jd mil ni paye bhot dukh hoyaa yrr. Mein gl ki krna chahnda c`
+  },
+  {
+    n: 112,
+    date: "02 July",
+    text: `Thank you so much for everything 🥹❤️. Mein bhot stressed si swer da and i was just waiting a good conversation with you, idk why! I dont know how to thank you but one promise i can make is your presence will always be this much worthy like today. Thank you❤️🧿🥹`
+  },
+  {
+    n: 113,
+    date: "03 July",
+    text: `Kdi thnu eve ni feel hon dauga ki mil jaye toh mitti kho jaye toh sona. Tuc mera sona ni mera sb toh precious oo jidi na ta koi money value hai bsss mere emotional value jidi shyd koi keemat ni`
+  },
+  {
+    n: 114,
+    date: "04 July",
+    text: `Kal te aaj mein chahe bye bye krti tuhade nal hi Pr sauga taa 10 min baad hi😂❤️ Haar tabh hi hoti hai jab maan liya jaata hai, Jeet tabh hoti hai jab thaan liya jaata hai`
+  },
+  {
+    n: 115,
+    date: "05 July",
+    text: `Haar tabh hi hoti hai jab maan liya jaata hai, Jeet tabh hoti hai jab thaan liya jaata hai`
+  },
+  {
+    n: 116,
+    date: "06 July",
+    text: `Tuc sochde hoo naa kii meinn ehni cheti kida bhrosa krn lagg gyaa tuc ta krr ni paye c ehni jldii ehda jvab dva. Je bina gl kite kdi mein pyar kr paya ta oo meri fitrat c oo tere kol rehke tenu smjhn di khoobsoorti c. je gl krke bhrosa krn lgda ta shyd koi reason bann chuka hunda thnu pyar krn da tuhade nal sare khwaab bunan da tuhade te bhrosa krn da. Aaj merekol koi reason ni sirf tuc ho tuc hi chahide o te tuc tuc hoo bssss.`
+  },
+  {
+    n: 117,
+    date: "07 July",
+    text: `Je socha vicho thu kdhh skda hunda ta shyd aaj pyar hi na hunda. Tuhada late replies no calls and many more meinu ehna hamper krde hini.. haa frk ta penda hai prr thnu khon toh jehda frkk payega oh iss toh ptani kinna vdhh hoyega. Ha mein pyar krda meinu ni pta kyo ni accepted thnu mein, relation vagera jdd ki sabb all good hai yaar. Mere vste sb tuhade ch vsda mein kida chd dauga mera hai kaunn.. mishti je apne intension dii gll kra ta shyd raat vi ghat pejee. Duniya shyd tenu jism lai chayegi tere sohne mukhde lai chahehgi te o chahat edha hi hoyegi jehda sabb tera chinn layegi, i said sabb kuchh.. prr je mein apni gll kra mein ta chahat hi teri muskaan di rkhda yrr roj koshish krda thnu hske svava iss toh vdh kida kra yrr.. thnu aage vdhana chahna ik vdia life manifest krna chahna tuhade nal behkee.. sabb compromise krn nu ready aa mein`
+  },
+  {
+    n: 118,
+    date: "08 July",
+    text: `Apna hun sabb vdia chlreya regular calls sb kuchh vdia haii bss nazr na laggee prr yrr shikayat ehmiyat toh hai. Mein thnu sbb tohh vdh rkhna chahna pr tuc rehna nahi chahndee. Mein thnuu rabb de aage kiti guzarisha ch rkhna chahnaa te tuc ptani kehde khyala ch rehna chahne o. Jaan nu aaj chla jvaa yrr mein mera ki hai mann dukhega halle vi dukh reha regret hoyega aaj vi hundaa jdd thnu dur hunda dekhda let it be. But thnu kise hor de hatha ch dekh tuhadi khushi ch khush jroor hauga prr tuhade hanjua nu ni dekh pauga o ni seh paugaa tuhade takiyee ansuaa nal bhijdee ni dekh pauga tuhadi jehdi hrr raat mein hsss hss ke kdha dinda c oo shyd dubara ni kdh pauoga vini haugaa`
+  },
+  {
+    n: 119,
+    date: "09 July",
+    text: `Aaj saadi bhot der gll hoi ehna jyada vdia lag reha na yrr ki bss edha hi chlda ravvee, aaj apa decide kita c raati pdhke sovage tuuc 11 vaje online aage c te apa 11 toh 12:30 pdhna c tuhada 12:10 te hi msg agya ki bss hor nii pdhna cho gll krde aa mein smjhgyaa ki malkin ji ko yaad aarii hai yeeeeeeee, ab toh pyaar hoo rha hai malkinn ji kooo`
+  },
+  {
+    n: 120,
+    date: "10 July",
+    text: `Lagg gaii nazar aaj fir gl ni hoi waao, raati vi tuc 1 vaje call krke uthaya hai meinu ehna bekar feel ho reha na yrr ehna mood khrab aa but thnu firvi hsake hi svaya aa yr chlo koini yrr tuc jida theek lgda kro mein pyar krdaa mein sabb sahi krda rahuga tuc bss naal khde raho, keha c na meinu chahe apna na bnana bss kol reh meri zindagi swaar dena, tuhada ptani mein tuhadi zindagi pakka swaar duu yrr`
+  },
+  {
+    n: 121,
+    date: "11 July",
+    text: `I loveee youu soo muuch cutieee, jd tuc meinu flirt krn nu mnah krde ho oye hoyee kyaa baat disappointment hundi but thnu kaun smjhavee sohneyooo kii mein taa sach boldaaa jaaan meriii`
+  },
+  {
+    n: 122,
+    date: "12 July",
+    text: `Mein ni kuch likhna aaj nazar laggi jandi hai ik din chaj nal gl hundi dooje din hundi ni chdoo likhnaa hini`
+  },
+  {
+    n: 123,
+    date: "13 July",
+    text: `Yrr meinu pta you are broken mein ta eh kehna yr khud nu aage vdhaoo mere nal ni ta kisi hor nal atleast relation ch aao apni khushiya ohde ch lbhni shuru kro apne goals set kro apni life bnaan te dhyan dvoo ik o person de naal milke. Dekho mein ta temporary hi aa na yr bss ik vaadey de sirr te tuhade nal rehna chahna ki kash jdd maut aave te tuc naal hovo. Sabb hasil krlaga prr je eh rehgya ta thnu paana rehgya ta shyd bhot pachtauga. Chlo koinii mahadev ji sabb vdia hi krnge mere lai nai ta tuhade lai. Shyd je apni na bni taa ohde chh tuhada bhala hove. Khud nu aage vdhao yrr edha ni kr hona kida smjhava smjh ni anda . Kdi sochda harman di madad lva pr bhrosa ni hunda kdi sochda kirpa nal gl kra prr krr ni pandaa.`
+  },
+  {
+    n: 124,
+    date: "14 July",
+    text: `Ptaa thnu eh jindagi kisi vstee ni rukdii, te ehi ehdi khaas hai gl prr jdd mein khud nu puchya naa ki eh khaas gl hai taa mein aaj de apne aap nu puchya te jvab mileya ki yr mein chahnda jindagi je rukee ta uss time tuc mere nal hovo, jee chalpave ta mere hath ch tuhada hath hovve. Edha meaning eh c yr ki mein jindagi rokan nu tyar aa time rokan di manjoori aa ki je tuc naal o prr aage meinn kalla ni vdhna chahnda thnu naal vdhana chahnda🥹❤️`
+  },
+  {
+    n: 125,
+    date: "15 July",
+    text: `Tuc meinu aaj keha mein MEIN EHNI JROORI AA JI?? Eh hun mein kida smjhava? Chlo kuch likhke dekhde aa Jroorat kisnu nai, Kisee nu rooh dii kisi nu jism di, Je rkhi mein jroorat jism dii taa pyar di ehmiyat kis kissmm di Meri te rooh mangdi pyar tera, Dil ne hrr vaar poojeya naam tera Hrr rabb aage pa chuka arji aa, Mere pyar nu amar krna hun teri mrji a Tere khwaba da rkh mein chithaa chuka Ohnu pura krn vste puri nishtha rkhaa, Tu khud nu kdi ghat ch na vasai Nakhre meinu de khud na apne aap nu rusai Mein dum sari duniya jittan da rkhu Nal khdeya je meinu mera eh pyar vikhu Sare khwaab dekha mein naal tere Tere har khwaab pure krn de mein rkha lako dil ch mere Firvi akhdi hai ki mein schi jroori a Tenu kol rkhna majboori a Majboori kahdi eh puchh mere dil nu Dil jdd dhadku tere naam tee Tdd jvab milu tenu Bss hun chahidi rabb di manjoori aa Miln de intezaar ch aa, Fir tu khud nu kahegi ki haa mein schi jroori a❤️`
+  },
+  {
+    n: 126,
+    date: "16 July",
+    text: `Meinu nai pta yrr apne dona da ki future aa kal nu gll bnd hojayegi nahi hoyegi ptani yrrr prr mein at least ik vrr chahna ki mere nal mere smnee betho te ik vaar mera meinu dil khalii kr lain doo. Mein koi glt chaap chdke ni jana chahnda and yes i really want to make you permanent or to Let you go. Bhot lamba reason hai let you go da but one thing is the ability to let you go will destroy me but still i will let you go because that is my sense of love i dont want to make you in boundaries but want a big life with you and more than that i manifest a life of you which is way too beyond of your dreams Mann bhreya peya hai iss time muh ch lafaz hi lafaz hai prr darshava kide aage yrr`
+  },
+  {
+    n: 127,
+    date: "17 July",
+    text: `Mein na bhot time pehle ik gl likhi c jehdi aaj sach hundi najar aarhi Ki jee gll jroori hove ta insaan bhuljai, Jee insaan jroori hoya ta gll bhuljai Tuc meinu ignore kita te aage vi krde o and meinu jdd bekadri jithe jithe vi feel hoi mein chla gya pr iss vaar naa meri ijjat naa meri ego naa koi self respect da angle kuch nai jitt paa reha kyoki mein thnu pyaar krda mein thnu pyaar krda. Mere vste mein ni hun tuc matter krde o mein tuhade hrr mod te tuhade nal khdna chahnaa kisi gl toh lako rkh thnu gvana ni chahnda meri life ch o value rkhde o jehdi kise ne ni rkhi. Jo mein aaj krda je eh pyar hai ta kehlo pehla pyar a mera te oo tuc o❤️`
+  },
+  {
+    n: 128,
+    date: "18 July",
+    text: `When a man is in love he dont want lust but want reassurance of love at every moment`
+  },
+  {
+    n: 129,
+    date: "19 July",
+    text: `puraa enjoy krnaa photos khichna bhejnaa koi tension ni lainii apni life enjoy krooo ik vdiaa break lvoo life tohh tee vdia mindset nal vapas aao happy happy hoke❤️🧿✨ Dhyan rkhna apna puraa, time sair khana khalenaa. Koivi lod hoyegi meinu call krlenaa, dhyan nal turna sareya de naal rehna kalle na jnaa kithe vi. Will miss you but will be more than happy to see you happy and enjoying. Take care❤️💕🧿✨`
+  },
+  {
+    n: 130,
+    date: "20 July",
+    text: `Haa yrr meinu bhot yaad aarhii you are always in my brain and because I love you. Yr meinu tuc chahide o in every moment of my life either it is a happy moment sad moment or a neutral one but you are always be my need. I want to express you again each and everything. Hune vi tuc message seen te chdta c my ego said she will text now but my heart which loves you said what if she doesn't text? I will wait the whole night! I love you🥹❤️✨`
+  },
+  {
+    n: 131,
+    date: "21 July",
+    text: `Mera obsession sbb kill krr dinda hai meri phone calls thnuu messages harman nu ptani ki ki yrr pr sb tuhade vste si yr thnu pyar krda iss vste c yrr. Mein kida smjhava kida likhava kuch ni smjh areha thnu ni khona chahnda bss yrr`
+  },
+  {
+    n: 132,
+    date: "22 July",
+    text: `Mein hunii movie dekhke aya just and tuc offline hoo te mein iss time schi gl krna chahnaa.. i know tuc sogye o but ki kra yrr mann bechain hunda. Mein ehna impatient harman nuvi krta message😂. Yr ki kra yrr kdi kisi vste kdi edha feel hini kita je ehnu pyar kehnde te yr mera pehla pyar aa ehh. Te mein chahna akhri hove`
+  },
+  {
+    n: 133,
+    date: "23 July",
+    text: `Meinu nai idea mishti ki ho reha ki nai mere mann ch ki chal reha ki nai prr kdi tuc meinu mere kol hunde najar ande oo kadii dur. Jdd kdi dur hunde najar aane oo khud nu koss da kdi tuhade te ik ilzaam laan dii himmat ni krr paya. Piche je sab bhot vdia hogya c we were so so so good and happy. But jdd mein uss din movie toh baad vapas aya my obsession for you peaked again and everything seems to be getting destroyed. Meinu nai pta ehda ki hauga mein ik vaar tuhade kol behke thnu sab confess krna chahna prr naal behke mein gl krna chahnaa hrr time bss ehi sochda ki bola kida bola kida treat kra kida bolde hoye thnu treat kraa kinu kvaa gl kran lii kirpa harman and soo on. Yaar ehna sochda ki mera pyaar sacha nii hau?? Thnu kdi realisation ni hoya!`
+  },
+  {
+    n: 134,
+    date: "24 July",
+    text: `Mera obsession hrr vaar sbb maar dinda hai ki kra yr mein pyaar krdaa je tuhade nal obsess ni hau ta kide nal hauga yrr sbb accept krn nu tyar aa pr tuhada dur jna nii.. kdi ehna dharmikk nahi c jina hunn hogyaa yrr koi esi bhagwan ji di murti nai koi aisaa rabb da sathaan ni jithe mein tuhade naam nu sthaan na diti hovvee. Mein hrr jgah mangeya thnuu te pta kai vaar hurt hoke sochyaa ki hun nai mangna thnu prr pura ni krr paya hrr jgah te thnu mngn di esi adat lgi ki kdi hun chdna hini chahndaa..`
+  },
+  {
+    n: 135,
+    date: "25 July",
+    text: `Aaj jdd tuhada call aayaa mein saloon te c and my smile was this much big ki meinu barber tk ne kehta ki pajiiiii ki gl hogii bdeee khush hoge o😂.. mein khush c bhot te thnu pta mein apne ch realise kita mtlb apne aap ch ki yr mein bhot hi overthink krda but end ch sb ulta hunda jo vi mein sochda. Hunn mein bathera kuch sochyaa hoya sochnoo te hatda hini meinn tee meinu ptaa hona sabb meri soch toh parey hi hai`
+  },
+  {
+    n: 136,
+    date: "26 July",
+    text: `Ptaa mein ki sochda kirpa nuu hunn mein sab dsugaa ki mere intension ki meri feelings hai kyokii mein hun ehi sochya i will propose you in such a way where no one can reach most unique way because you deserve that. Mein kirpa nu dsna chahnaa sabb kuch confess krna chahna ki mein ohdi bhen mishti nu kina pyar krdaa, kida mera rabb ohde chh vsdaa kida mera kalla kalla khwaab ch ohda naam aa mere kalle kallee guzarish sirf ohda naam aa. Pehli vrr jindagi ch insaan mngeya te o tuc o yrr. Sb tyaag taa bss thnu ni let go krn dena chahnda, jina mrji chah lva mera chahan toh mann ni bhrr reha`
+  },
+  {
+    n: 137,
+    date: "27 July",
+    text: `Mein ansh manocha ik vaada krdaa kii mein tuhadi jindagi oo shakss bnke aauga. Tuc khwaab dekhoge mein pura krn ch jaan lauga, tuc khush hauge tuhadi khushi chh shaan laugaa. Tuc kismat nu parkhogee mein kismat badlan da dum rkhuga, hrr modd nu tuhade hisab nal bunn duga i swear. This is my love!. Koi kismat nu nai hraa ska mein tuhade vste tuhadi khushii vste likhi kismat paltann ch jaan laugaa. God will be with me because they know how pure i am for you`
+  },
+  {
+    n: 138,
+    date: "28 July",
+    text: `Mein kina pyaar krda yrr thnu kida dsa halle vi sirf tuhade bare hi soch reha tuc bye bolti aa neend nai aarhi aaj tuc late aye c bhit pyaar krda yrr mera brain rest ni krda sirf misthi bare sochda te mishti nu mera dil dimag ehna pyar krde ki eh apas ch hi ldhde rehnde aa kii mein pyaar krda mein pyaar krda. Bhot pyaar krdaa yrr bhot khush rkhuga ik vaar apni life apna eh pyaar parakh ke taa dekhoo yrr jaan varduga yrr sohniye`
+  },
+  {
+    n: 139,
+    date: "29 July",
+    text: `Aajj apa ehni glla mariya call te vi chat tee vii oye hoye best day ever yrr ehni glla yrr sadi vibe ehni match hoi aaj tuc o vishal randhawa and all bare dsya haa bhot insecure hoya but theek hai yr i love you i am inecure because i love you, jehda mrji magar aave mein tuhade toh piche ni hatan valaa huhh. Naa mein kise vaal jauga kyoki kudiya bhot ne prr meri mishti vrgii koi nai, yes merii mishtiii`
+  },
+  {
+    n: 140,
+    date: "30 July",
+    text: `Yr thnu apna pyar kida darshava yrr mere vste kii o tuc kida smjhava yr. bhot pyar krda yr apna bnana chahna hun ni reha janda yrr. Apna bnan vste taras da thnu chd kida jauga. Ways lbhda thnu khush krn de, sara time sochda ki kida gl kraa kida kra kirpa nal gl krda shydd kdi chance mile ta ye vo ptani ki ki yr. just because i love you🥹❤️`
+  },
+  {
+    n: 141,
+    date: "31 July",
+    text: `Mein jina pyar krda shyd kdi darshaya hini jaa skda meri hrr khwaish ch tera naam aa, khwaish hi tera naam aa. Mera pyar ehna upr aa ki yrr kdii tenu ronda ni dekhna chahnda yrr bhot pyar krna chahna thnu jamane di sari khushiyaa dena chahnaa tuhadi family nu apnaa kee sabb ohna ch smjhna chahnaa ik parivar bnake rkhna chahna i know bhot jldi aa apne ch halle kuchni aa prr mein ik gl kahi c yr ki meri sari duniyaaa 2 hisseya ch vandi ja chuki hai, ik duniya te ik pyar jide ch meri duniya vsdi hai. Te jehde pyar ch duniya vsdi aa naa oh sbb toh vdi duniya hai chahe ohde ch sirf 1 person mishti hai, dooji duniya ch sare hai prr oh sare vi o jgah ni le skde o vddi duniya ni bna skde jo mishti ne mere dil ch bnai hai jo mere dil ch ohde lai pyar hai, i love you❤️🧿`
+  },
+  {
+    n: 142,
+    date: "01 August",
+    text: `Thnu ptaa mein mtlb jaataa ni rehaa dss reha obviously you know me. Mein pta roj 11:11 hundee hi chahe dine raati akha bndd krke shuru ho jnaa ki bss misht baksh doo mishti baksh do😂😂`
+  }
+];
 
+const journalGrid = document.querySelector(".journal-grid");
+
+additionalEntries.forEach(entry => {
+  const plainText = entry.text.replace(/\s+/g, " ").trim();
+  const preview = plainText.length > 180
+    ? plainText.substring(0, 180).trim() + "…"
+    : plainText;
+
+  const card = document.createElement("article");
+  card.className = "journal-card";
+
+  card.innerHTML = `
+    <div class="card-top">
+      <span class="entry-number">#${String(entry.n).padStart(3, "0")}</span>
+      <span class="entry-date">${entry.date}</span>
+    </div>
+
+    <h2>A page from this day</h2>
+
+    <p class="preview">${preview}</p>
+
+    <details>
+      <summary>Read entry <span>＋</span></summary>
+      <div class="full-entry"></div>
+    </details>
+  `;
+
+  const fullEntry = card.querySelector(".full-entry");
+  fullEntry.textContent = entry.text;
+
+  // Preserve the journal's original line breaks
+  fullEntry.style.whiteSpace = "pre-line";
+
+  journalGrid.appendChild(card);
+});
+</script>
 </body>
 </html>
