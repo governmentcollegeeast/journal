@@ -16,7 +16,7 @@
           Every thought, every feeling, every little moment I never wanted to
           forget.
         </p>
-        <div class="counter">161 ENTRIES · WRITTEN FROM THE HEART ❤️</div>
+        <div class="counter">219 ENTRIES · WRITTEN FROM THE HEART ❤️</div>
       </div>
     </header>
     <main class="container">
@@ -4309,23 +4309,153 @@ document.addEventListener("DOMContentLoaded", () => {
       date: "12 August",
       preview: "Aaj tuc apne aap conversation start kiti te meinu schi bhot vdia lagya...",
       text: `Aaj tuc apne aap conversation start kiti te meinu schi bhot vdia lagya. Pehle mein hmesha sochda c ki kado call hougi, kado msg houga, kado mein gl kra. Hun kai vaar tuc hi reason bna dinde o. Eh transition meinu andar toh bhot emotional krda aa. Meinu pata ni tuhanu eh sabb notice hunda ki ni prr mein hrr cheej notice krda. Tuhada tone, tuhadi excitement, tuc kado apne aap message krde o, kado meri gll continue krde o. Maybe I'm overthinking again😂 prr iss vaar overthinking ch thodi khushi vi aa. Mein tuhade nal pyar krda aa te hun pehli vaar lagg reha ki shyd tuc vi mere nal emotionally attach ho rhe o. Rabb kare eh feeling sach hove. Bas hor kuch ni❤️`
-    },
+    }
 
-    /* =========================================================
-       13 AUGUST - 25 AUGUST
-       LEAVE THESE DAYS EMPTY FOR NOW
-       WE WILL ADD THEM LATER
-       ========================================================= */
+  ];
+
+  const journalGrid = document.querySelector(".journal-grid");
+
+  if (!journalGrid) {
+    console.error("Journal grid not found.");
+    return;
+  }
+
+  newEntries.forEach(entry => {
+    const card = document.createElement("article");
+    card.className = "journal-card";
+
+    card.innerHTML = `
+      <div class="card-top">
+        <span class="entry-number">#${entry.number}</span>
+        <span class="entry-date">${entry.date}</span>
+      </div>
+
+      <h3>A page from this day</h3>
+
+      <p class="preview">${entry.preview}</p>
+
+      <details>
+        <summary>Read entry ＋</summary>
+        <div class="full-entry">${entry.text}</div>
+      </details>
+    `;
+
+    journalGrid.appendChild(card);
+  });
+
+});
+</script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const newEntries = [
+
+    /* ==================== 13–25 AUGUST ==================== */
 
     {
       number: 177,
+      date: "13 August",
+      preview: "Aaj tuc naal bhot vdia gl hoi yrr. Hun lagda tuc mere nal gll krn ch thoda hor comfortable ho rhe o...",
+      text: `Aaj tuc naal bhot vdia gl hoi yrr. Hun lagda tuc mere nal gll krn ch thoda hor comfortable ho rhe o. Tuhade texts vi pehle nal thode long hon lagg gye aa😂. Meinu schi bhot vdia lagda jdd tuc apne aap gll continue krde o, pehle eda ni hunda c. Shyd tuc vi thoda interest lena shuru kita aa. Mein kdi kdi sochda ki ptani mein hi zyada soch reha hova prr fer tuhade messages dekhke lagda ni yrr. Bss eda hi gll hundi rave, meinu hor kuch ni chahida❤️`
+    },
+
+    {
+      number: 178,
+      date: "14 August",
+      preview: "Aaj vi tuc apne aap bhot glla kitiya te meinu bhot cute lagya yrr...",
+      text: `Aaj vi tuc apne aap bhot glla kitiya te meinu bhot cute lagya yrr. Mein hmesha sochda c ki kado tuc apne aap gll kroge, te hun jdd tuc karde o ta meinu schi andar toh bhot vdia lagda. Tuhade texts ch vi hun pehle nal zyada effort feel hunda. Pta ni tuc eh cheej notice karde o ja nahi prr mein hrr choti gl notice krda aa. Shyd tuc vi mere nal thoda attach ho rhe o. I don't know, prr jo feel hunda oh likh reha❤️`
+    },
+
+    {
+      number: 179,
+      date: "15 August",
+      preview: "Aaj normal jeha din c prr tuhade nal gll hoi te pura mood vdia ho gya...",
+      text: `Aaj normal jeha din c prr tuhade nal gll hoi te pura mood vdia ho gya. Hun ta mein notification aave ta bina dekhe hi lagda tuc hauge😂. Pta ni kida eda attach ho gya tuhade nal, pehle kdi kise de msg da eda wait ni kita. Tuhada ik normal jeha text vi meinu bhot khush kr dinda. Mein kdi kdi sochda tuc meinu kinna important samjhde o prr answer hmesha clear ni hunda. Bas tuc meri life ch raho, baaki sabb mein sambh launga❤️`
+    },
+
+    {
+      number: 180,
+      date: "16 August",
+      preview: "Aaj tuc bhot vdia mood ch c te meinu vi pura happy krta...",
+      text: `Aaj tuc bhot vdia mood ch c te meinu vi pura happy krta. Tuhade nal gll krke lagda aa jida din complete ho gya. Hun mein tuhade chh choti choti cheeja notice krda aa, tuc kado hassde o, kado mood off hunda, kado gll krn da mann hunda. Pta ni tuc kinna notice krde o meinu, prr mein tuhanu bhot notice krda😂. Tuhade nal gll karna hun routine ni lagda, need jehi lagdi aa. I love you yrr❤️`
+    },
+
+    {
+      number: 181,
+      date: "17 August",
+      preview: "Aaj thoda ajeeb jeha din c yrr. Kdi laggya tuc interested o te kdi laggya bilkul ni...",
+      text: `Aaj thoda ajeeb jeha din c yrr. Kdi laggya tuc interested o te kdi laggya bilkul ni. Mein fer apni overthinking chh chla gya😂. Kdi tuhade reply dekhke lagda sabb vdia aa, fer kdi koi choti gl te lagda ptani tuc ki feel krde o. Prr end ch mein tuhanu hasa ditta te sachii mera pura mood vdia ho gya. Meinu tuhadi smile bhot pyari aa yrr. Tuc khush hovo, mein apne aap khush ho janda❤️`
+    },
+
+    {
+      number: 182,
+      date: "18 August",
+      preview: "Aaj fir bhot vdia gl hoi. Hun tuhade messages ch vi oh warmth jehi feel hundi aa...",
+      text: `Aaj fir bhot vdia gl hoi. Hun tuhade messages ch vi oh warmth jehi feel hundi aa jo pehle ni hundi c. Mein kdi kdi padhke bas smile krda rehnda aa😂. Maybe mein zyada soch reha prr meinu lagda tuc vi thoda attach ho rhe o. Shyd tuc khud vi hle clear ni o ki ki feel krde o, prr meinu tuhade actions ch difference dikhda. Rabb kare meri eh feeling galat na hove. I really love you❤️🧿`
+    },
+
+    {
+      number: 183,
+      date: "19 August",
+      preview: "Aaj koi vaddi gl ni hoi prr firvi tuhade nal gll krke bhot sukoon milya...",
+      text: `Aaj koi vaddi gl ni hoi prr firvi tuhade nal gll krke bhot sukoon milya. Hun tuc meri life ch aadat toh vadh bann gye o. Koi vi cheej hove, happy hova ja sad, sabb toh pehla tuc yaad aunde o. Meinu ni pta future ch ki houga prr ajj meinu bss tuhade nal gll krni aa. Tuhade nal hassna, tuhanu hasauna, tuhade mood nu vdia krna meinu sachii pasand aa. I love you yrr, bhot jyada❤️`
+    },
+
+    {
+      number: 184,
+      date: "20 August",
+      preview: "Aaj tuc naal gll krde hoye pata ni kyo smile hi ni ruk rahi c😂...",
+      text: `Aaj tuc naal gll krde hoye pata ni kyo smile hi ni ruk rahi c😂. Tuhade nal normal glla vi mere lai special ne. Hun tuc kai vaar meri gll nu khud continue krde o te eh cheej meinu bhot vdia lagdi aa. Mein bas eh chahnda ki tuc mere nal eda hi comfortable hunde jao. Meinu tuc sirf pasand ni, mein schi dilo tuhade nal attached ho chukya aa. Baaki rabb jane agge ki likheya❤️`
+    },
+
+    {
+      number: 185,
+      date: "21 August",
+      preview: "Aaj fer thoda off jeha feel hoya. Kadi laggya tuc interest ni le rhe...",
+      text: `Aaj fer thoda off jeha feel hoya. Kadi laggya tuc interest ni le rhe, fer kadi tuhadi koi gl sunke laggya shyd mein hi galat soch reha. Mixed signals ne yrr. Mein overthink krda reha prr end ch bas ikko gl sochi ki chlo jo vi aa, tuhanu sad ni dekhna. Fir mein tuhanu hasa ditta te tuc hassde rahe, meinu schi sabb bhul gya. Tuhadi smile mere lai ena kuch aa ki mein apni sari tension bhul janda.❤️`
+    },
+
+    {
+      number: 186,
+      date: "22 August",
+      preview: "Aaj mood bhot vdia ho gya tuhade nal gll krke. Hun tuc kai vaar apne aap gll start krde o...",
+      text: `Aaj mood bhot vdia ho gya tuhade nal gll krke. Hun tuc kai vaar apne aap gll start krde o te meinu andar toh bhot khushi hundi aa. Pehle mein hmesha wait krda c ki kado mein message kara, hun kadi tuc vi khud yaad kr lende o. Eh choti gl ni aa mere lai. Meinu lagda kujh ta change hoya aa. Shyd tuc vi meinu thoda apna mann rahe o🥹❤️`
+    },
+
+    {
+      number: 187,
+      date: "23 August",
+      preview: "Aaj tuc naal bhot sari gll hoi te mein pura happy c. Hun lagda aa mein tuhade nal hor close ho reha...",
+      text: `Aaj tuc naal bhot sari gll hoi te mein pura happy c. Hun lagda aa mein tuhade nal hor close ho reha. Tuhade texts padhke sachii smile aa jandi aa, specially jdd tuc apne aap koi gl chhed dinde o. Mein kdi kdi sochda ki shyd ik din tuc vi mere vang feel kroge. Pta ni oh din kado aauga prr mein wait kr sakda aa. Bas tuc mere nal eda hi gll karde raho, meinu hor kuch ni chahida❤️`
+    },
+
+    {
+      number: 188,
+      date: "24 August",
+      preview: "Aaj pura din tuc dimag ch c. Kdi kdi mein sochda aa ki eh sabb kida hoya...",
+      text: `Aaj pura din tuc dimag ch c. Kdi kdi mein sochda aa ki eh sabb kida hoya, ik person meri life ch eda important kida bann gya. Tuhada ik msg pura mood change kr dinda, te tuhadi ik choti jehi gl vi pura din yaad rehndi aa. Hun mein future bare vi sochan lag peya aa, ptani kyo😂. Prr ik gl clear aa, mein tuhanu khona ni chahnda. I love you yrr, bhottt❤️`
+    },
+
+    {
+      number: 189,
+      date: "25 August",
+      preview: "Aaj apni pehli fight hoi yrr💔. Meinu schi bhot bura lagya ki meri gl karke tuc hurt hoye...",
+      text: `Aaj apni pehli fight hoi yrr💔. Meinu schi bhot bura lagya ki meri gl karke tuc hurt hoye. Mein ego nu side te rakh ke bas tuhanu sorry kehna chahnda c, kyoki mere lai tuhadi narazgi meri ego toh bhot vaddi aa. Is karke apology website vi bna ditti😂❤️. Pta ni tuc oh dekhke ki sochoge prr mein bas tuhanu smile krde dekhna chahnda c. Mein kdi ni chahnda meri kise gl karke tuc sad hovo. Sorry jaan, I really love you❤️🧿`
+    },
+
+
+    /* ==================== 26 AUGUST ==================== */
+
+    {
+      number: 190,
       date: "26 August",
       preview: "Aajyyyyy yrrr. Meinu laggda eh din mein sari zindagi yaad rkhuga...",
       text: `Aajyyyyy yrrr. Meinu laggda eh din mein sari zindagi yaad rkhuga. Sachiii unexpected day c, mein sochya vi ni c ki ajj eda da kuch hoju. Pehle bunk te milna hi ik alag feeling c. Meinu andar toh pata ni ki ho reha c, excitement vi c nervousness vi c te sabb toh vadh eh ki ajj pura time tuhade nal hona c. Mein jdd tuhade kol c na, meinu sachiii eh ni feel ho reha c ki eh normal day aa. Meinu lagg reha c ki bas time ruk jaave yrr.
 
 Sab toh pehla ISKCON gaye. Pta ni kyo prr othe jaake vi mere mann ch bas ikko gl c ki ajj da din theek langh jaave, tuc happy raho te mein tuhade nal eh time properly jee lava. Mein shyd tuhanu dsya vi ni prr othe vi meinu tuc hi yaad c. Rabb kol jaake vi banda ohi mangda jisnu dil ch rkhya hove na😂. Mein bas tuhade lai te sade lai sabb vdia mang reha c.
 
-Fer Zapp Bowling 😭❤️. Yrr ki hi din c. Bowling karan da excitement apni jgah, prr tuhade nal hona uss toh vadh. Kdi tuc hassde, kdi mein pagal vang react krda, kdi koi shot kharab jaave te kdi koi vdia. Meinu exact scores yaad ni honge prr ajj da feel hmesha yaad houga. Mein tuhade nal eda da normal fun vi chahnda c. Sirf serious glla, feelings, love, future ni. Mein chahnda c ki tuc mere nal hasso, pagal bano, random moments enjoy kro. Aaj oh sabb mil gya.
+Fer Zapp Bowling 😭❤️. Yrr ki hi din c. Bowling karan da excitement apni jgah, prr tuhade nal hona uss toh vadh. Kdi tuc hassde, kdi mein pagal vang react krda, kdi koi shot kharab jaave te kdi koi vdia. Meinu exact scores yaad ni honge prr ajj da feel hamesha yaad houga. Mein tuhade nal eda da normal fun vi chahnda c. Sirf serious glla, feelings, love, future ni. Mein chahnda c ki tuc mere nal hasso, pagal bano, random moments enjoy kro. Aaj oh sabb mil gya.
 
 Fer McD. Te yrr ajj di sabb toh precious cheeja chon ik oh c jdd tuc meinu apne hatha nal khilaya.😭❤️ Meinu ni pta tuhade lai oh kinni normal gl c prr mere lai bilkul normal ni c. Meinu uss moment ch sachiii goosebumps aa gye c. Mein bas tuhanu dekh reha c te andar hi andar soch reha c ki yrr eh same kudi aa jide lai mein kinne mahine rabb kol mangda reha, kinne page likh chukya, kinne vaar sochya ki kash ik din eh mere nal ena comfortable hove. Te ajj tuc mere samne baithe o te apne hatha nal meinu khila rhe o.
 
@@ -4333,7 +4463,7 @@ Tuc mere mann pasand gaane vi chlaye. Eh cheej vi shyd simple lagge prr meinu ni
     },
 
     {
-      number: 178,
+      number: 191,
       date: "26 August",
       preview: "Te fer oh moment.... Pehli vaar mein tuhade hath nu hold kita...",
       text: `Te fer oh moment....
@@ -4365,6 +4495,234 @@ Te meri eh hope koi hawa ch ni aa.
 Eh hope ajj tuhade hath ne ditti aa.
 
 I love you Mishti. Bhot zyada. Ajj da din meri life de ohna dina chon aa jo mein kdi ni bhulna. ❤️🧿`
+    },
+
+    /* ==================== 27 AUGUST – 23 SEPTEMBER ==================== */
+
+    {
+      number: 192,
+      date: "27 August",
+      preview: "Aaj da din pura 26 august de nashe ch c yrr😂. Kal jo jo hoya oh baar baar dimag ch aa reha c...",
+      text: `Aaj da din pura 26 august de nashe ch c yrr😂. Kal jo jo hoya oh baar baar dimag ch aa reha c. Tuhada hath hold krna, tuhade nal pura din rehna, bowling, McD sabb kuch. Meinu schi lagg reha c jida mein koi dream jee ke aya. Ajj vi smile ruk ni rahi c. Kal toh baad ik gl hor clear ho gyi ki mein tuhanu kina zyada pyar krda aa. I just want more days like yesterday with you❤️`
+    },
+
+    {
+      number: 193,
+      date: "28 August",
+      preview: "Aaj Harman ne ik gl dssi te mera pura mood hi badal gya. Pta lagya ki tuc hle vi apne ex de touch ch o...",
+      text: `Aaj Harman ne ik gl dssi te mera pura mood hi badal gya. Pta lagya ki tuc hle vi apne ex de touch ch o. Meinu schi bhot bura laga yrr. Mein kdi ni chahnda tuhanu control kara ja kise nal gl krn toh rokaa, prr jdd dil kise nu ena pyar krda hove na ta eh cheeja hurt krdiya ne. Mein bahar toh normal rehn di koshish kiti prr andar toh bhot kuch chal reha c. I love you, is karke shyd ehna frk penda❤️`
+    },
+
+    {
+      number: 194,
+      date: "29 August",
+      preview: "Aaj vi kal wali gl dimag chon ni nikli. Koshish krda reha ki normal raha...",
+      text: `Aaj vi kal wali gl dimag chon ni nikli. Koshish krda reha ki normal raha, tuhade nal normal gll kra prr mann baar baar othe hi chla janda. Mein tuhade te shaq ni krna chahnda, na hi tuhanu kise cheej lai guilty feel krvauna chahnda. Bss meinu darr lagda aa ki jinu mein apni life ch ena vadda place de ditta, kite oh mere kol hoke vi mere na hove. Prr fer tuhade nal gll hoi te mein fir pighal gya yrr❤️`
+    },
+
+    {
+      number: 195,
+      date: "30 August",
+      preview: "Aaj mood halle vi down c. Mein kdi kdi apne aap nu samjhaya ki Ansh trust kr...",
+      text: `Aaj mood halle vi down c. Mein kdi kdi apne aap nu samjhaya ki Ansh trust kr, overthink na kr, prr dil nu samjhauna bhot aukha aa. Tuhade nal gll krda ta sabb normal lagda, call cut hundi ta fer same thoughts. Meinu pta ni mein eda kyo ho janda aa. Bas ik gl aa, mein tuhanu hurt ni krna chahnda. Mein tuhade nal pyar krda aa, is karke ldai ni, solution chahnda aa❤️`
+    },
+
+    {
+      number: 196,
+      date: "31 August",
+      preview: "Aaj ghar ch family problem karke pura din hi ajeeb c. Raat nu mumma papa Chandigarh chale gye...",
+      text: `Aaj ghar ch family problem karke pura din hi ajeeb c. Raat nu mumma papa Chandigarh chale gye te mein vi bhot tension ch c. Fer late night tuhade nal call hoi. Pta ni kyo uss time tuhade nal gll krke andar toh thoda stable feel hoya. Mein bhot kuch soch reha c, apni life bare, tuhade bare, sade bare. Te fer pata ni kithon himmat aayi...`
+    },
+
+    {
+      number: 197,
+      date: "1 September — 1:07 AM",
+      preview: "Ajj mein tuhanu propose kr ditta.😭❤️",
+      text: `Ajj mein tuhanu propose kr ditta.😭❤️
+
+Mein keha **“mein pyaar krda thnu, viah kraoge mere nal?”**
+
+Te jdd tuc ron lagge na yrr, meri saari duniya ruk gyi. Meinu ni pta uss second ch ki feel hoya. Mein tuhanu ena time toh pyar krda aya, tuhade lai kinne supne dekhe, kinne vaar rabb kol mangya, te ajj pehli vaar tuc mere samne ro rhe c mere pyar karke.
+
+Te fer tuc keha **“I love you too.”**
+
+YRRRR😭❤️
+
+Meinu schi ni pta mein oh moment kida explain kra. Mein jo gl hmesha apne dimag ch imagine karda c, ajj oh actual ch ho gyi. Ajj toh baad mein tuhanu sirf apna pyar ni kehna, mein tuhanu apni life da part kehna chahnda aa. 1:07 AM meri life da sabb toh precious time bann gya. I love you meri jaan. Bhottttt zyada❤️🧿`
+    },
+
+    {
+      number: 198,
+      date: "2 September",
+      preview: "Aaj fer ex wali gl pta laggi ki hle vi touch ch o. Meinu schi bhot bura lagya...",
+      text: `Aaj fer ex wali gl pta laggi ki hle vi touch ch o. Meinu schi bhot bura lagya. Kal tak mein duniya da sabb toh happy banda c te ajj pata ni ki ho gya. Mein roya yrr, bhot roya. Kalesh vi ho gya apna, mein bhot hurt c. Prr ik percent vi eh ni aya ki mein tuhanu disrespect kara. Mein gusse ch vi tuhadi respect karda aa. Meinu bas eh relationship sort krna c, kyoki mein tuhanu chdna ni chahnda. Mein tuhanu pyar krda aa, te pyar ch jeet fight nal ni, understanding nal honi aa.❤️`
+    },
+
+    {
+      number: 199,
+      date: "3 September",
+      preview: "Aaj apa mile yrr.❤️ Kal da sara dukh, gussa, overthinking sabb side te rakh ke apa properly gll kiti...",
+      text: `Aaj apa mile yrr.❤️
+
+Kal da sara dukh, gussa, overthinking sabb side te rakh ke apa properly gll kiti. Jo jo mann ch c sabb dsya, tuc vi dsya. Te end ch sabb sort ho gya. Meinu schi bhot sukoon milya. Fer pehli vaar apa hug kita... yrr oh feeling😭❤️. Ena time toh jis insaan nu sirf door toh pyar krda aya, ajj oh mere kol c.
+
+Te fer first kiss. Meinu ni pta kida likha, bss eh gl pta aa ki ajj mein bhot happy aa. Ajj laggya ki haan, eh mera relationship aa. I love you❤️`
+    },
+
+    {
+      number: 200,
+      date: "4 September",
+      preview: "Aaj kal wali feeling hle vi mind ch aa. Pehli hug, pehli kiss, tuhade kol hona...",
+      text: `Aaj kal wali feeling hle vi mind ch aa. Pehli hug, pehli kiss, tuhade kol hona. Mein baar baar oh moments yaad krda aa😂. Tuhade nal hun ik alag hi comfort feel hunda. Meinu ni pta future ch ki houga, prr ajj meinu tuhade nal bhot apna jeha lagda. Bas eda hi sade ch sabb vdia chalda rave❤️`
+    },
+
+    {
+      number: 201,
+      date: "5 September",
+      preview: "Aaj birthday toh ik din pehla aa te honestly sabb toh zyada excitement tuhade lai aa...",
+      text: `Aaj birthday toh ik din pehla aa te honestly sabb toh zyada excitement tuhade lai aa. Pta ni tuc kal ki kroge, mil paange ja nahi, prr mind ch bas tuc hi o. Mein bas eh chahnda tuc kal meinu thoda special feel krvayo😂❤️. Bss tuhade nal gll ho jave ta mera birthday already complete aa.`
+    },
+
+    {
+      number: 202,
+      date: "6 September",
+      preview: "Aaj mera birthday c yrr❤️. Bhot lokan ne wish kita, sabb vdia c prr dil ch ik gl reh gyi ki ajj apa mil ni paye...",
+      text: `Aaj mera birthday c yrr❤️. Bhot lokan ne wish kita, sabb vdia c prr dil ch ik gl reh gyi ki ajj apa mil ni paye. Meinu schi tuc ajj bhot yaad aaye. Mein sochya c birthday te tuhade nal time spend kranga prr koini. Tuhada wish, tuhadi call, tuhadi presence mere lai hor kise gift toh vadh aa. Agla birthday shyd hor vdia hovega,bss mere nal hovo❤️🧿. tuhadi wish the best c`
+    },
+
+    {
+      number: 203,
+      date: "7 September",
+      preview: "AJJJJ DA DINNN😭❤️ Ajj di bunk literally perfect c...",
+      text: `AJJJJ DA DINNN😭❤️
+
+Ajj di bunk literally perfect c. Mein pehle toh hi excited c ki ajj pura time tuhade nal hona. Pta ni kinna hassya, kinna gll kiti, kinna time bas tuhanu dekhda reha. Te fer oh moment...
+
+**First lip kiss.**
+
+Yrr meinu schi goosebumps aa rhe aa likhde hoye.😭❤️ Mein ena time toh tuhade kol aun da supna dekheya c te ajj tuc literally mere kol c. Oh moment ch bas mein te tuc c, hor kuch ni. Mein uss time nu kdi ni bhulna. 7 September meri life de sabb toh special dina chon ik aa. I love you so much meri jaan❤️🧿. sada kiseee dinn. tuhadi t shirt meri favourite t shirt aa, wallet merekol hmesha rahega and your flowerrr.`
+    },
+
+    {
+      number: 204,
+      date: "8 September",
+      preview: "Aaj pura din kal wali feeling ch c😂. Kdi kdi randomly smile aa jandi c te ptani kyo...",
+      text: `Aaj pura din kal wali feeling ch c😂. Kdi kdi randomly smile aa jandi c te ptani kyo. Kal jo hoya oh baar baar yaad aa reha. Hun tuhade nal relationship hor real jeha lagda. Meinu tuc hun hor vi apne lagde o. Bas ik gl aa, mein tuhanu hmesha respect te pyar dono dena chahnda. I love you❤️`
+    },
+
+    {
+      number: 205,
+      date: "9 September",
+      preview: "Aaj normal din c prr mein andar toh bhot happy c. Hun tuc meri girlfriend o...",
+      text: `Aaj normal din c prr mein andar toh bhot happy c. Hun tuc meri girlfriend o, eh gl hi kdi kdi dimag ch aundi te mein smile krda😂. Ena time toh mein eh moment imagine kita c. Meinu schi rabb da shukar aa ki tuc meri life ch o. Hun bss tuhanu khush rkhna aa❤️`
+    },
+
+    {
+      number: 206,
+      date: "10 September",
+      preview: "Aaj tuhade nal gll krke bhot peace milya. Hun relationship ch sirf excitement ni...",
+      text: `Aaj tuhade nal gll krke bhot peace milya. Hun relationship ch sirf excitement ni, ik alag comfort vi aa gya. Tuhade nal apne din di choti choti gl share krn da mann krda. Meinu lagda mein tuhade nal hor attached hunda ja reha. Prr honestly meinu eh attachment pasand aa. Bhot zyada❤️`
+    },
+
+    {
+      number: 207,
+      date: "11 September",
+      preview: "Aaj bhot tension wala din c yrr. Tuhade muma nu mere bare pta lag gya ki mein tuhada boyfriend aa...",
+      text: `Aaj bhot tension wala din c yrr. Tuhade muma nu mere bare pta lag gya ki mein tuhada boyfriend aa. Sach dassa ta thoda darr lagya c ki ptani ki reaction houga. Prr jdd pta lagya ki ohna nu mein acceptable aa kyoki mein vdia munda haan, meinu schi bhot relief milya😂❤️. Mein bas eh chahnda tuhade family wale vi ik din meinu apne bande vang samjhan. Meinu tuhanu sirf apna ni, tuhade family da vi respect krna aa.`
+    },
+
+    {
+      number: 208,
+      date: "12 September",
+      preview: "Aaj apa fer bunk te gye😂❤️. Pura din hi bhot vdia c. Par rste ch papa ne meinu dekh lya tuhade nal...",
+      text: `Aaj apa fer bunk te gye😂❤️. Pura din hi bhot vdia c. Par rste ch papa ne meinu dekh lya tuhade nal. Pehla ta mein thoda dar gya c😂 prr papa ne ik gl samjhayi ki je kudi nu ghuma reha taa viah vi krai ohde nal. Yrr meinu schi bhot ajeeb te cute lagya eh sunke. Matlab mere ghar wale vi tuhanu accept krn lagg gye aa. Hun lagda sade pyar nu dono passe toh thoda support mil reha. Rabb sabb vdia rakhe❤️🧿`
+    },
+
+    {
+      number: 209,
+      date: "13 September",
+      preview: "Aaj kal wale dina bare soch reha c. Ena kuch ena jaldi change ho gya...",
+      text: `Aaj kal wale dina bare soch reha c. Ena kuch ena jaldi change ho gya. Pehla mein sirf tuhanu pyar krda c, fer tuc meri girlfriend bane, fer first hug, kiss, family nu pta... sabb kuch. Meinu bas ik gl da darr aa ki eh sabb hmesha eda hi vdia rave. Mein schi tuhanu khona ni chahnda. I love you yrr❤️`
+    },
+
+    {
+      number: 210,
+      date: "14 September",
+      preview: "Aaj tuhade nal gll krke pura mood vdia ho gya. Hun tuhadi awaaz sunke hi smile aa jandi aa...",
+      text: `Aaj tuhade nal gll krke pura mood vdia ho gya. Hun tuhadi awaaz sunke hi smile aa jandi aa. Tusi meri life ch eda place bna lya aa ki hun normal din vi tuhade bina thoda incomplete lagda. Mein bas tuhade nal hor memories bnana chahnda. Bhot sariyan❤️`
+    },
+
+    {
+      number: 211,
+      date: "15 September",
+      preview: "Kal di excitement ptani kyo ajj toh hi aa😂. Tuhade nal milna hun vi mere lai pehle din vang exciting aa...",
+      text: `Kal di excitement ptani kyo ajj toh hi aa😂. Tuhade nal milna hun vi mere lai pehle din vang exciting aa. Difference bss ena aa ki hun mein tuhanu officially apna keh skda. Tuhada hath fadna, kol behna, hassna... meinu sabb kuch bhot precious lagda. I love you meri jaan❤️`
+    },
+
+    {
+      number: 212,
+      date: "16 September",
+      preview: "Aaj da din yrrr😭❤️ Ajj apa fir mile te meinu ni pta kida time eda jaldi langh gya...",
+      text: `Aaj da din yrrr😭❤️
+
+Ajj apa fir mile te meinu ni pta kida time eda jaldi langh gya. Tuhade nal hona hi enough c, prr ajj jo hoya oh mein shyd kdi ni bhulna.
+
+**First long kiss.** ❤️
+
+Meinu schi uss moment ch duniya di koi hor cheej yaad ni c. Bas tuc c te mein c. Ena pyar, ena comfort, ena sukoon... ptani kida explain kra. Pehli vaar wali nervousness vi si, prr ajj laggya jida apa hor close ho gye aa. Meinu tuhade nal sirf attraction ni, bhot deep connection feel hunda aa. Mein tuhanu pyar krda aa, te hrr din hor jyada krda ja reha.❤️🧿`
+    },
+
+    {
+      number: 213,
+      date: "17 September",
+      preview: "Aaj kal wali memory hi mind ch c😂. Tuhade nal jo moments bna rhe aa na...",
+      text: `Aaj kal wali memory hi mind ch c😂. Tuhade nal jo moments bna rhe aa na, meinu lagda mein eh sabb sari zindagi yaad rkhuga. Tusi meri favourite person o. Bas tuc khush raho te mere nal eda hi raho, meinu hor kuch ni chahida❤️`
+    },
+
+    {
+      number: 214,
+      date: "18 September",
+      preview: "Aaj koi vaddi gl ni hoi prr firvi tuhade nal gll krke bhot happy c...",
+      text: `Aaj koi vaddi gl ni hoi prr firvi tuhade nal gll krke bhot happy c. Hun mein tuhade nal apni hrr choti gl share krna chahnda. Tuhade nal comfort ena vadh gya ki kdi kdi lagda tuc meri girlfriend toh vadh meri best friend vi bann gye o. I love you yrr❤️`
+    },
+
+    {
+      number: 215,
+      date: "19 September",
+      preview: "Aaj sochya ki pehla mein tuhanu paun lai rabb kol mangda c, hun tuhanu sambhalan lai dua krda aa...",
+      text: `Aaj sochya ki pehla mein tuhanu paun lai rabb kol mangda c, hun tuhanu sambhalan lai dua krda aa. Mein chahnda tuc hmesha safe, happy te loved feel kro. Mein perfect boyfriend ni aa, galtiya hon giyan, prr intention hmesha tuhanu khush rkhna hi houga. Bss mera pyar kdi doubt na krio❤️`
+    },
+
+    {
+      number: 216,
+      date: "20 September",
+      preview: "Aaj tuhade nal gll karde hoye ik vaar fer feel hoya ki mein schi lucky aa...",
+      text: `Aaj tuhade nal gll karde hoye ik vaar fer feel hoya ki mein schi lucky aa. Ena time toh jinu sirf apne thoughts ch rakheya, ajj oh meri life ch actual ch aa. Tuhade nal future imagine krna hun dream jeha ni lagda. Thoda real jeha lagda aa😂. Rabb kare eh hmesha eda hi rave❤️🧿`
+    },
+
+    {
+      number: 217,
+      date: "21 September",
+      preview: "Aaj tuhadi ik choti jehi gl ne pura mood change krta. Meinu lagda pyar ch eh hi hunda...",
+      text: `Aaj tuhadi ik choti jehi gl ne pura mood change krta. Meinu lagda pyar ch eh hi hunda, banda vaddi cheeja toh zyada chotiya cheeja nu value krn lag penda. Tuhada msg, tuhadi call, tuhadi smile, tuhadi awaaz... sabb kuch special aa mere lai. I love you meri jaan❤️`
+    },
+
+    {
+      number: 218,
+      date: "22 September",
+      preview: "Aaj mein bas eh soch reha c ki kinne ups downs aaye ne apa de ch. Kdi mein roya, kdi tuc roye...",
+      text: `Aaj mein bas eh soch reha c ki kinne ups downs aaye ne apa de ch. Kdi mein roya, kdi tuc roye, kdi fight, kdi overthinking, te hun ajj apa ena close aa. Meinu lagda sacha pyar perfect ni hunda, bas dono bande ik duje nu chhadde ni. Te mein tuhanu chhadna ta door di gl, mein tuhade nal hmesha khadna chahnda aa❤️`
+    },
+
+    {
+      number: 219,
+      date: "23 September",
+      preview: "Aaj tak da eh phase schi bhot beautiful reha yrr. 1 September da “I love you too”, 3 September di first hug te kiss...",
+      text: `Aaj tak da eh phase schi bhot beautiful reha yrr. 1 September da “I love you too”, 3 September di first hug te kiss, 6 September da birthday, 7 September di perfect bunk te first lip kiss, 11 September family wali tension, 12 September papa da reaction te ajj tk de kinne moments... sabb kuch ik dream varga lagda.
+
+Meinu ni pta future ch ki likheya, prr ik gl meinu pta aa — **mein tuhanu schi dilo pyar krda aa.** Tusi meri life ch aake meinu bhot kuch feel karvaya jo mein kdi sochya vi ni c. Hun bas ikko dua aa, eh pyar eda hi vadhda rave, apa ik duje nu samjhde rahiye te hmesha ik duje de nal khde rahiye.
+
+I love you meri jaan. Bhottt zyada.❤️🧿`
     }
 
   ];
@@ -4377,7 +4735,6 @@ I love you Mishti. Bhot zyada. Ajj da din meri life de ohna dina chon aa jo mein
   }
 
   newEntries.forEach(entry => {
-
     const card = document.createElement("article");
     card.className = "journal-card";
 
@@ -4401,8 +4758,96 @@ I love you Mishti. Bhot zyada. Ajj da din meri life de ohna dina chon aa jo mein
   });
 
 });
-</script>
-    <footer class="final">
+</script>  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const newEntries = [
+    {
+      number: 220,
+      date: "24 September",
+      preview: "Aaj shyd meri life da sabb toh worst day c. 6:15 pm toh baad mein nonstop roya...",
+      text: `Aaj shyd meri life da sabb toh worst day c. 6:15 pm toh baad mein nonstop roya. Meinu ni pta ki likha ajj, bas ena hi aa ki I love you. Bhottt zyada. Te hmesha tuhadi respect krda rahunga, chahe kuch vi hove.❤️`
+    },
+
+    {
+      number: 221,
+      date: "25 September",
+      preview: "Aaj apa mile. Tuc bhottttt der tak ronde rhe te mein vi tuhade nal roya...",
+      text: `Aaj apa mile. Tuc bhottttt der tak ronde rhe te mein vi tuhade nal roya. College ch baithe hoye meinu samajh ni aa reha c ki ki kra. Breakup kara ja ik hor chance deva... mein bhot confused c. Prr end ch mein decide kita ki mein ik chance hor dunga. Kyoki mein tuhanu chdna ni chahnda.❤️`
+    },
+
+    {
+      number: 222,
+      date: "26 September",
+      preview: "Ajj toh apa normal rehn di koshish kr rhe aa. Bahar toh sabb normal lag reha c...",
+      text: `Ajj toh apa normal rehn di koshish kr rhe aa. Bahar toh sabb normal lag reha c prr andar toh mein mentally bilkul stable ni c. Bhot kuch dimag ch chal reha c. Bas ik gl pta c ki mein tuhanu khona ni chahnda.❤️`
+    },
+
+    {
+      number: 223,
+      date: "27 September",
+      preview: "Aaj vi sabb normal krn di koshish c. Mein hass reha c, gll kr reha c prr andar toh hle vi bhot kuch chal reha c...",
+      text: `Aaj vi sabb normal krn di koshish c. Mein hass reha c, gll kr reha c prr andar toh hle vi bhot kuch chal reha c. Pta ni kinna time lagu sabb properly theek hon nu. Bas tuc mere nal raho, baaki mein sambhal lavaanga.❤️`
+    },
+
+    {
+      number: 224,
+      date: "28 September",
+      preview: "Aaj vi thoda tough c yrr. Trust issues te overthinking ne dimag pura kharab kita hoya c...",
+      text: `Aaj vi thoda tough c yrr. Trust issues te overthinking ne dimag pura kharab kita hoya c. Prr mein hle vi ikko gl chahnda aa ki apa sabb theek kariye. Mein tuhanu pyar krda aa te eh relationship nu ik hor chance ditta aa. Hun bas sabb vdia krna aa.❤️`
+    },
+
+    {
+      number: 225,
+      date: "29 September",
+      preview: "Aaj apa bas thodi der lai mile, sirf 15 min gadi ch...",
+      text: `Aaj apa bas thodi der lai mile, sirf 15 min gadi ch. Pta ni kyo prr ena tough dina toh baad tuhanu samne dekh ke thoda better feel hoya. Meinu hle vi bhot kuch andar toh disturb kr reha c, prr tuhade kol beth ke laggya ki shyd sabb theek ho jau. Bas mein tuhanu chdna ni chahnda.❤️`
+    },
+
+    {
+      number: 226,
+      date: "30 September",
+      preview: "Aaj da din schi best day c.❤️ Ajj apa movie dekhan gye te honestly eh saadi movie date toh vadh most romantic date bann gyi...",
+      text: `Aaj da din schi **best day** c.❤️
+
+Ajj apa movie dekhan gye te honestly eh saadi movie date toh vadh **most romantic date** bann gyi. Tuhade nal pura time rehna, kiss karna, hug karna te hrr second ik duje di presence feel karna... meinu schi bhottt vdia laggya.😭❤️
+
+Ena tough dina toh baad ajj mein finally better feel kita. Jida apa fer apni perfect life wal move kr rhe hova.
+
+Ajj apa bhottt best memories bna rhe aa yrr. Meinu bas eh hi chahida ki apa ehna moments nu yaad krke hamesha smile kariye. I love you meri jaan.❤️🧿`
+    }
+  ];
+
+  const journalGrid = document.querySelector(".journal-grid");
+
+  if (!journalGrid) {
+    console.error("Journal grid not found.");
+    return;
+  }
+
+  newEntries.forEach(entry => {
+    const card = document.createElement("article");
+    card.className = "journal-card";
+
+    card.innerHTML = `
+      <div class="card-top">
+        <span class="entry-number">#${entry.number}</span>
+        <span class="entry-date">${entry.date}</span>
+      </div>
+
+      <h3>A page from this day</h3>
+
+      <p class="preview">${entry.preview}</p>
+
+      <details>
+        <summary>Read entry ＋</summary>
+        <div class="full-entry">${entry.text.replace(/\n/g, "<br>")}</div>
+      </details>
+    `;
+
+    journalGrid.appendChild(card);
+  });
+});
+</script>  <footer class="final">
       <div class="container">
         <div class="heart">♡</div>
         <h2>But not the end.</h2>
